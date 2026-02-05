@@ -2,7 +2,7 @@ from PIL import Image
 import os
 
 source_folder = r"E:\To_Webp"
-dest_path = r"C:\Users\farza\WebstormProjects\techfuse-2\public\techFuseEvents"
+dest_path = r"C:\Users\farza\WebstormProjects\techfuse-2\public\techFuseGallery"
 web_quality = 85
 
 os.makedirs(dest_path, exist_ok=True)
