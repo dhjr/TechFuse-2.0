@@ -27,7 +27,7 @@ for filename in sorted(os.listdir(source_folder)):
 
         # Ensure unique basename (skip already existing)
         while True:
-            base_name = f"events{current_index:02d}.webp"
+            base_name = f"glimpses of techfuse{current_index:02d}.webp"
             webp_path = os.path.join(dest_path, base_name)
             if not os.path.exists(webp_path):
                 break
