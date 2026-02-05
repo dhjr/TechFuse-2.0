@@ -2,7 +2,7 @@ from PIL import Image
 import os
 
 source_folder = r"E:\To_Webp"
-dest_path = r"C:\Users\farza\WebstormProjects\techfuse-2\public\techFuseEvents"
+dest_path = r"C:\Users\farza\WebstormProjects\techfuse-2\public\techFuseGallery"
 web_quality = 85
 
 os.makedirs(dest_path, exist_ok=True)
@@ -27,7 +27,7 @@ for filename in sorted(os.listdir(source_folder)):
 
         # Ensure unique basename (skip already existing)
         while True:
-            base_name = f"events{current_index:02d}.webp"
+            base_name = f"glimpses of techfuse{current_index:02d}.webp"
             webp_path = os.path.join(dest_path, base_name)
             if not os.path.exists(webp_path):
                 break
