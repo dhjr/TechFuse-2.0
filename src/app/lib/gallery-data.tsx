@@ -7,16 +7,21 @@ export type GalleryItem = {
   height: number;
 };
 
-const IMAGE_COUNT = 10;
+const IMAGE_COUNT = 27;
 
 export const galleryImages: GalleryItem[] = Array.from(
     { length: IMAGE_COUNT },
-    (_, i) => ({
-      id: i + 1,
-      src: `/techFuseGallery/glimpses${i}.webp`,
-      category: "Glimpses",
-      alt: "Glimpses of TechFuse",
-      width: 800,
-      height: 600,
-    })
+    (_, i) => {
+        const index = String(i + 1).padStart(2, "0");
+
+        return {
+            id: i + 1,
+            src: `/techFuseGallery/glimpses of techfuse${index}.webp`,
+            category: "Glimpses",
+            alt: "Glimpses of TechFuse 2.0",
+            width: 800,
+            height: 600,
+        };
+    }
 );
+
