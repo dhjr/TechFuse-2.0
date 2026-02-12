@@ -182,7 +182,7 @@ export default function Footer() {
             <div className="flex gap-4">
               <DeveloperLink
                 name="Dhananjay R"
-                link="https://devcard.link/hP9V2t"
+                link="https://dhjr.vercel.app"
               />
               <span className="text-zinc-470">/</span>
               <DeveloperLink

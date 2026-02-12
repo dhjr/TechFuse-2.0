@@ -5,7 +5,6 @@ import SignalDetected from "@/app/components/SignalDetected";
 export default function Home() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
-
       {/* =========================================
           MAIN CONTENT
       ========================================= */}
@@ -42,7 +41,7 @@ export default function Home() {
             href="#"
             // target="_blank"
             // rel="noopener noreferrer"
-            className="group relative cursor-none inline-flex items-center justify-center px-7 py-4 font-bold text-white transition-all duration-200 bg-transparent rounded-2xl border border-[#66FFFF] hover:bg-[#66FFFF] hover:text-[#0C143B] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#66FFFF]"
+            className="group relative inline-flex items-center justify-center px-7 py-4 font-bold text-white transition-all duration-200 bg-transparent rounded-2xl border border-[#66FFFF] hover:bg-[#66FFFF] hover:text-[#0C143B] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#66FFFF]"
           >
             <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-linear-to-b from-transparent via-transparent to-gray-700"></span>
             <span className="relative text-sm tracking-[0.2em] uppercase">

@@ -116,7 +116,11 @@ export default function EventModal({ data, onClose }: EventModalProps) {
           )}
 
           {data.free ? (
-              <Button text="Registeration Closed" link={data.formLink} isExternalLink={true}/>
+            <Button
+              text="Registration Closed"
+              link={data.formLink}
+              isExternalLink={true}
+            />
           ) : (
             <>
               {/*<div className="flex flex-col bg-red-500">*/}
@@ -128,7 +132,11 @@ export default function EventModal({ data, onClose }: EventModalProps) {
               {/*        ))*/}
               {/*    )}*/}
               {/*</div>*/}
-              <Button text="Registeration Closed" link="#" isExternalLink={false} />
+              <Button
+                text="Registration Closed"
+                link="#"
+                isExternalLink={false}
+              />
             </>
           )}
         </div>
