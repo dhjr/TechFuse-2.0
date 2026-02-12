@@ -28,7 +28,7 @@ function AboutTemplate(Data: Data) {
 
   return (
     // Added 'relative' to allow for background accents if you add them later
-    <div className="flex flex-col items-center w-full py-12 px-6 relative">
+    <div className="flex flex-col items-center w-full py-12 px-3 md:px-6 relative">
       {/* HEADER SECTION */}
       <div
         className={`w-full text-left px-5 md:px-8 py-2 mb-4 ${Data.animation?.className}`}
@@ -45,15 +45,15 @@ function AboutTemplate(Data: Data) {
                 items-center 
                 justify-between 
                 gap-12 md:gap-20 
-                w-full py-8 px-4 md:px-8`}
+                w-full py-8 px-0 md:px-8`}
       >
         {/* TEXT CONTAINER */}
         {/* UPGRADE 1: Added border-l-2 (The Data Stream Line) */}
         <div
           className={`max-w-[600px] space-y-6 ${
             layout === "flex-row-reverse"
-              ? "md:pl-10 border-l-2 border-[#66FFFF]/30 pl-6" // Left border for visual anchor
-              : "md:pr-10 border-l-2 md:border-l-0 md:border-r-2 border-[#66FFFF]/30 pl-6 md:pl-0 md:pr-6" // Right border logic
+              ? "md:pl-10 md:border-l-2 border-[#66FFFF]/30 pl-0" // Left border for visual anchor
+              : "md:pr-10 md:border-r-2 border-[#66FFFF]/30 pl-0 md:pl-0 md:pr-6" // Right border logic
           } ${Data.animation?.className}`}
           style={Data.animation?.style}
         >
