@@ -21,9 +21,9 @@ export default function EventCard({ data, onClick }: EventCardProps) {
         <Image
           src={data.src}
           alt="Event Image"
-          width={300}
-          height={200}
-          className="rounded-t-xl object-cover h-[300px] "
+          width={400} // Increased base resolution
+          height={300} // Increased base resolution
+          className="rounded-t-xl object-cover w-full h-full"
         />
       </div>
 
