@@ -44,7 +44,8 @@ body {
 
 /* 4. UTILITY CLASSES */
 .bg-tf-radial-pattern {
-  background: radial-gradient(
+  background:
+    radial-gradient(
       at 50% 100%,
       var(--color-tf-bg-secondary) 10%,
       var(--color-tf-bg-primary) 70%
@@ -100,11 +101,8 @@ body {
 /* 6. RADAR GRID PATTERN */
 .bg-radar-grid {
   background-size: 50px 50px;
-  background-image: linear-gradient(
-      to left,
-      rgba(255, 255, 255, 0.05) 1px,
-      transparent 1px
-    ),
+  background-image:
+    linear-gradient(to left, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
 }
@@ -133,11 +131,11 @@ body {
 }
 
 .animate-fade-in-up {
-  animation: fadeInUp 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation: fadeInUp 1s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
 .animate-fade-in-scale {
-  animation: fadeInScale 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation: fadeInScale 1s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
 .delay-200 {
