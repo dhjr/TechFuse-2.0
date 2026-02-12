@@ -89,6 +89,7 @@ function AboutTemplate(Data: Data) {
               height={320}
               alt={headings.join(" / ")}
               loading="eager"
+              sizes="(max-width: 768px) 100vw, 520px"
               className={`w-full min-h-60 h-auto opacity-90 hover:opacity-100 transition-opacity duration-500 ${
                 Data.className || "object-cover"
               }`}
