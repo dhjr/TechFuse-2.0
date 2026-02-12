@@ -24,7 +24,7 @@ export default function GalleryContent() {
       if (!selectedImage) return;
       setDirection(newDirection === "next" ? 1 : -1);
       const currentIndex = galleryImages.findIndex(
-        (Image) => Image.id === selectedImage.id
+        (Image) => Image.id === selectedImage.id,
       );
       const newIndex =
         newDirection === "next"
@@ -32,7 +32,7 @@ export default function GalleryContent() {
           : (currentIndex - 1 + galleryImages.length) % galleryImages.length;
       setSelectedImage(galleryImages[newIndex]);
     },
-    [selectedImage]
+    [selectedImage],
   );
 
   // --- ANIMATION VARIANTS ---
@@ -114,6 +114,7 @@ export default function GalleryContent() {
               src={image.src}
               alt={image.alt}
               priority={index < 4}
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               className="w-full h-auto transition-transform duration-700 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-linear-to-t from-black/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
@@ -194,6 +195,7 @@ export default function GalleryContent() {
                     height={1000}
                     src={selectedImage.src}
                     alt={selectedImage.alt}
+                    sizes="100vw"
                     className="object-contain w-auto h-auto max-w-full max-h-full shadow-2xl rounded-sm select-none pointer-events-none"
                     draggable={false}
                   />

@@ -90,6 +90,7 @@ export default function EventModal({ data, onClose }: EventModalProps) {
           alt={data.name}
           width={400}
           height={300}
+          sizes="(max-width: 768px) 100vw, 400px"
           className="object-cover rounded-2xl shadow-lg w-full md:w-[320px] h-[220px] md:h-auto"
         />
 
