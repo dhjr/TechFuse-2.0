@@ -23,6 +23,7 @@ export default function EventCard({ data, onClick }: EventCardProps) {
           alt="Event Image"
           width={400} // Increased base resolution
           height={300} // Increased base resolution
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="rounded-t-xl object-cover w-full h-full"
         />
       </div>
