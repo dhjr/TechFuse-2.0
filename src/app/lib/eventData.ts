@@ -170,26 +170,26 @@ const eventData: EventData[] = [
         formLink: "https://www.yepdesk.com/techfuse1",
         src: "/techFuseEvents/events03.webp"
     },
-    {
-        id: 1,
-        title: "Registrations Now Open",
-        eventName: "TechFuse 2.0",
-        type: "Tickets",
-        venue: "RIT Kottayam",
-        date: "30 Jan – 1 Feb 2026",
-        salutaion: "Explore the World of Signals and Circuits",
-        eventDescription: "IEEE SPS SBC RIT, in collaboration with IEEE SPS Kerala Chapter, presents TechFuse 2.0 — a three-day technical extravaganza focused on signals and circuits. Early bird registrations are now open.",
-        speakers: [],
-        location: "RIT Kottayam",
-        price: [
-            "IEEE SPS Members – ₹799",
-            "IEEE Members – ₹999",
-            "Non-IEEE Members – ₹1199"
-        ],
-        free: false,
-        // formLink: "https://www.yepdesk.com/techfuse1",
-        src: "/techFuseEvents/events01.webp"
-    },
+    // {
+    //     id: 1,
+    //     title: "Registrations Now Open",
+    //     eventName: "TechFuse 2.0",
+    //     type: "Tickets",
+    //     venue: "RIT Kottayam",
+    //     date: "30 Jan – 1 Feb 2026",
+    //     salutaion: "Explore the World of Signals and Circuits",
+    //     eventDescription: "IEEE SPS SBC RIT, in collaboration with IEEE SPS Kerala Chapter, presents TechFuse 2.0 — a three-day technical extravaganza focused on signals and circuits. Early bird registrations are now open.",
+    //     speakers: [],
+    //     location: "RIT Kottayam",
+    //     price: [
+    //         "IEEE SPS Members – ₹799",
+    //         "IEEE Members – ₹999",
+    //         "Non-IEEE Members – ₹1199"
+    //     ],
+    //     free: false,
+    //     // formLink: "https://www.yepdesk.com/techfuse1",
+    //     src: "/techFuseEvents/events01.webp"
+    // },
 
     {
         id: 3,
